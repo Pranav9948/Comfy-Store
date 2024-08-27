@@ -179,7 +179,7 @@ const SingleProduct = () => {
               features
             </h4>
 
-            <p className="opacity-50 text-sm max-w-sm mx-auto font-sans font-normal leading-6 mb-10 smallTablet:mx-0 smallTablet:max-w-xl">
+            <p className="opacity-70 text-sm max-w-sm mx-auto font-sans font-normal leading-6 mb-10 smallTablet:mx-0 smallTablet:max-w-xl">
               As the headphones all others are measured against, the XX99 Mark I
               demonstrates over five decades of audio expertise, redefining the
               critical listening experience. This pair of closed-back headphones
@@ -187,7 +187,7 @@ const SingleProduct = () => {
               durability at a relatively light weight of 11 oz.
             </p>
 
-            <p className="opacity-50 text-sm max-w-sm mx-auto font-sans font-normal leading-6 mb-10 smallTablet:mx-0 smallTablet:max-w-xl">
+            <p className="opacity-70 text-sm max-w-sm mx-auto font-sans font-normal leading-6 mb-10 smallTablet:mx-0 smallTablet:max-w-xl">
               From the handcrafted microfiber ear cushions to the robust metal
               headband with inner damping element, the components work together
               to deliver comfort and uncompromising sound. Its closed-back

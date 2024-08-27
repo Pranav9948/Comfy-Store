@@ -136,7 +136,7 @@ const Checkout = () => {
         </div>
       ) : (
         <div className="bg-white">
-          <div className="section-container ">
+          <div className="cart-container">
             <Link to={`/`}>
               <button className="capitalize font-sans text-base font-normal opacity-50 text-yellow-800 p-2 rounded-lg leading-6 mb-10 border-2 border-yellow-700 ">
                 Go back

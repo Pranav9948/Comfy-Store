@@ -59,7 +59,7 @@ const Landing = () => {
   
 
   return (
-    <div>
+    <div className="bg-white">
       {/* hero-container */}
 
       <div className="bg-black text-white ">
@@ -99,7 +99,7 @@ const Landing = () => {
       {/* homepage */}
 
       <div className="bg-white ">
-        <div className="my-32 section-container">
+        <div className="py-32 section-container">
           <div className="my-5">
             <SectionTitle text={"Featured Products"} />
           </div>
