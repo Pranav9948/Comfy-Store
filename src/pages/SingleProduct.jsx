@@ -74,7 +74,7 @@ const SingleProduct = () => {
   };
 
   return (
-    <div className="bg-white my-20">
+    <div className="bg-white py-20">
       <div className="section-container">
         <Link to={`/`}>
           <button className="capitalize font-sans text-base font-normal opacity-50 text-yellow-800 p-2 rounded-lg leading-6 mb-10 border-2 border-yellow-700 ">

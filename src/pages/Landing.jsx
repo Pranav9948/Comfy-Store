@@ -98,137 +98,140 @@ const Landing = () => {
 
       {/* homepage */}
 
-      <div className="bg-white  my-32 section-container">
-        <div className="my-5">
-          <SectionTitle text={"Featured Products"} />
-        </div>
-
-        <div className=" mt-20 mb-10 grid grid-cols-1 gap-20 smallTablet:grid-cols-3 smallTablet:gap-6 smallDekstop:gap-10">
-          {data &&
-            data?.map((products, idx) => {
-              return <FeaturedCardz {...products} key={idx} />;
-            })}
-        </div>
-
-        <div className="bg-[#D87D4A] text-white py-14 grid  place-items-center grid-cols-1 smallTablet:grid-cols-2 gap-8 smallDekstop:h-[560px] smallDekstop:py-0 ">
-          {/* speaker-img */}
-
-          <div className="relative smallDekstop:grid smallDekstop:place-items-end smallDekstop:h-full">
-            <img
-              src={speakerYellow}
-              alt="speaker-yellow"
-              className="w-44 h-52 smallTablet:w-56 smallTablet:h-72 smallDekstop:h-96 smallDekstop:w-80 smallTablet:scale-110"
-            />
+      <div className="bg-white ">
+        <div className="my-32 section-container">
+          <div className="my-5">
+            <SectionTitle text={"Featured Products"} />
           </div>
 
-          <div className="flex flex-col justify-center  smallDekstop:justify-start w-full">
-            <h3 className="text-white text-center font-sans mt-6 mb-6 text-4xl font-bold uppercase tracking-wider max-w-[250px] mx-auto smallTablet:text-6xl smallTablet:max-w-[350px] smallTablet:mt-12 smallTablet:text-left  smallDekstop:mx-0">
-              ZX9 SPEAKER
-            </h3>
-            <p className="text-white  font-sans text-base font-normal max-w-[260px] text-center mx-auto mb-7 smallTablet:max-w-[350px] smallTablet:mb-10  smallTablet:text-left smallDekstop:mx-0">
-              Upgrade to premium speakers that are phenomenally built to deliver
-              truly remarkable sound.
-            </p>
-
-            <div className="smallTablet:flex smallTablet:justify-start">
-              <PrimaryButtons
-                text={"see product"}
-                link={"/products"}
-                background={"bg-black"}
-                color={"text-white"}
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 smallDekstop:grid-cols-2 my-32 smallDekstop:gap-12 ">
-          <div className="w-full smallTablet:h-[250px]  smallDekstop:h-[350px]">
-            <img
-              src={bringBanner}
-              alt="bringbanner"
-              className="w-full  smallTablet:h-[250px] smallDekstop:h-[350px] smallDekstop:order-2"
-            />
-          </div>
-
-          <div className=" smallDekstop:order-1   smallDekstop:flex smallDekstop:flex-col smallDekstop:justify-center smallDekstop:h-[350px]  ">
-            <h3 className="mt-10 mb-8 text-black text-center text-3xl font-bold font-sans tracking-wider uppercase smallTablet:mt-10  smallDekstop:text-left smallDekstop:mt-0 smallDekstop:max-w-lg smallDekstop:mx-0">
-              Bringing you the <span className="text-[#d89d4a]">best</span>{" "}
-              audio gear
-            </h3>
-            <p className="text-black opacity-50 max-w-xs mx-auto text-left smallTablet:text-base smallTablet:max-w-lg smallDekstop:text-left smallDekstop:mx-0">
-              Located at the heart of New York City, Audiophile is the premier
-              store for high end headphones, earphones, speakers, and audio
-              accessories. We have a large showroom and luxury demonstration
-              rooms available for you to browse and experience a wide range of
-              our products. Stop by our store to meet some of the fantastic
-              people who make Audiophile the best place to buy your portable
-              audio equipment.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid-cols-2 relative h-96 smallTablet:h-[327px] my-12 bg-black">
-          <div className="absolute top-1/3 left-[50px] smallTablet:left-2/4 smallDekstop:left-2/3 laptop:left-2/4">
-            <h5 className="text-white font-sans text-2xl font-bold tracking-widest uppercase">
-              YX1 SPEAKER
-            </h5>
-
-            <div className="mt-5">
-              <SecondaryButton
-                text={"see product"}
-                link={"/products"}
-                background={"bg-black"}
-                color={"text-white"}
-                border={"border-white"}
-              />
-            </div>
-          </div>
-
-          <div className="smallTablet:absolute smallTablet:left-0 laptop:left-[200px] h-full">
-            <img src={earpodsBlack} alt="zxspeaker" className="" />
-          </div>
-        </div>
-
-        {/* You may also like */}
-
-        <div className="my-12">
-          <h4 className="capitalize text-black text-center font-sans text-2xl font-bold leading-9 mb-10 smallTablet:text-3xl smallDekstop:text-4xl smallTablet:mb-14">
-            you may also like
-          </h4>
-
-          <div className="grid grid-cols-1 smallTablet:grid-cols-3 gap-5 smallDekstop:gap-12">
+          <div className=" mt-20 mb-10 grid grid-cols-1 gap-20 smallTablet:grid-cols-3 smallTablet:gap-6 smallDekstop:gap-10">
             {data &&
               data?.map((products, idx) => {
-                return (
-                  <div key={idx} className="bg-[#F1F1F1] group grid place-content-center place-items-center h-full py-10 rounded-xl">
-                    <div className="mb-11">
-                      <img
-                        src={products?.attributes?.image}
-                        alt="pic"
-                        className="w-32 h-32 rounded-md smallDekstop:w-52 smallDekstop:h-52 group-hover:scale-110 group-hover:ease-out group-hover:duration-100 group-hover:shadow-md "
+                return <FeaturedCardz {...products} key={idx} />;
+              })}
+          </div>
+
+          <div className="bg-[#D87D4A] text-white py-14 grid  place-items-center grid-cols-1 smallTablet:grid-cols-2 gap-8 smallDekstop:h-[560px] smallDekstop:py-0 ">
+            {/* speaker-img */}
+
+            <div className="relative smallDekstop:grid smallDekstop:place-items-end smallDekstop:h-full">
+              <img
+                src={speakerYellow}
+                alt="speaker-yellow"
+                className="w-44 h-52 smallTablet:w-56 smallTablet:h-72 smallDekstop:h-96 smallDekstop:w-80 smallTablet:scale-110"
+              />
+            </div>
+
+            <div className="flex flex-col justify-center  smallDekstop:justify-start w-full">
+              <h3 className="text-white text-center font-sans mt-6 mb-6 text-4xl font-bold uppercase tracking-wider max-w-[250px] mx-auto smallTablet:text-6xl smallTablet:max-w-[350px] smallTablet:mt-12 smallTablet:text-left  smallDekstop:mx-0">
+                ZX9 SPEAKER
+              </h3>
+              <p className="text-white  font-sans text-base font-normal max-w-[260px] text-center mx-auto mb-7 smallTablet:max-w-[350px] smallTablet:mb-10  smallTablet:text-left smallDekstop:mx-0">
+                Upgrade to premium speakers that are phenomenally built to
+                deliver truly remarkable sound.
+              </p>
+
+              <div className="smallTablet:flex smallTablet:justify-start">
+                <PrimaryButtons
+                  text={"see product"}
+                  link={"/products"}
+                  background={"bg-black"}
+                  color={"text-white"}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 smallDekstop:grid-cols-2 my-32 smallDekstop:gap-12 ">
+            <div className="w-full smallTablet:h-[250px]  smallDekstop:h-[350px]">
+              <img
+                src={bringBanner}
+                alt="bringbanner"
+                className="w-full  smallTablet:h-[250px] smallDekstop:h-[350px] smallDekstop:order-2"
+              />
+            </div>
+
+            <div className=" smallDekstop:order-1   smallDekstop:flex smallDekstop:flex-col smallDekstop:justify-center smallDekstop:h-[350px]  ">
+              <h3 className="mt-10 mb-8 text-black text-center text-3xl font-bold font-sans tracking-wider uppercase smallTablet:mt-10  smallDekstop:text-left smallDekstop:mt-0 smallDekstop:max-w-lg smallDekstop:mx-0">
+                Bringing you the <span className="text-[#d89d4a]">best</span>{" "}
+                audio gear
+              </h3>
+              <p className="text-black opacity-50 max-w-xs mx-auto text-left smallTablet:text-base smallTablet:max-w-lg smallDekstop:text-left smallDekstop:mx-0">
+                Located at the heart of New York City, Audiophile is the premier
+                store for high end headphones, earphones, speakers, and audio
+                accessories. We have a large showroom and luxury demonstration
+                rooms available for you to browse and experience a wide range of
+                our products. Stop by our store to meet some of the fantastic
+                people who make Audiophile the best place to buy your portable
+                audio equipment.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid-cols-2 relative h-96 smallTablet:h-[327px] my-12 bg-black">
+            <div className="absolute top-1/3 left-[50px] smallTablet:left-2/4 smallDekstop:left-2/3 laptop:left-2/4">
+              <h5 className="text-white font-sans text-2xl font-bold tracking-widest uppercase">
+                YX1 SPEAKER
+              </h5>
+
+              <div className="mt-5">
+                <SecondaryButton
+                  text={"see product"}
+                  link={"/products"}
+                  background={"bg-black"}
+                  color={"text-white"}
+                  border={"border-white"}
+                />
+              </div>
+            </div>
+
+            <div className="smallTablet:absolute smallTablet:left-0 laptop:left-[200px] h-full">
+              <img src={earpodsBlack} alt="zxspeaker" className="" />
+            </div>
+          </div>
+
+          {/* You may also like */}
+
+          <div className="my-12">
+            <h4 className="capitalize text-black text-center font-sans text-2xl font-bold leading-9 mb-10 smallTablet:text-3xl smallDekstop:text-4xl smallTablet:mb-14">
+              you may also like
+            </h4>
+
+            <div className="grid grid-cols-1 smallTablet:grid-cols-3 gap-5 smallDekstop:gap-12">
+              {data &&
+                data?.map((products, idx) => {
+                  return (
+                    <div
+                      key={idx}
+                      className="bg-[#F1F1F1] group grid place-content-center place-items-center h-full py-10 rounded-xl"
+                    >
+                      <div className="mb-11">
+                        <img
+                          src={products?.attributes?.image}
+                          alt="pic"
+                          className="w-32 h-32 rounded-md smallDekstop:w-52 smallDekstop:h-52 group-hover:scale-110 group-hover:ease-out group-hover:duration-100 group-hover:shadow-md "
+                        />
+                      </div>
+
+                      <h4 className="text-black text-centerfont-sans text-center text-2xl font-bold mb-8 capitalize ">
+                        {products?.attributes?.title}
+                      </h4>
+
+                      <PrimaryButtons
+                        text={"see product"}
+                        link={`/products/${products?.id}`}
+                        color={"text-white"}
+                        background={"bg-[#D87D4A]"}
                       />
                     </div>
-
-                    <h4 className="text-black text-centerfont-sans text-center text-2xl font-bold mb-8 capitalize ">
-                      {products?.attributes?.title}
-                    </h4>
-
-                    <PrimaryButtons
-                      text={"see product"}
-                      link={`/products/${products?.id}`}
-                      color={"text-white"}
-                      background={"bg-[#D87D4A]"}
-                    />
-                  </div>
-                );
-              })}
+                  );
+                })}
+            </div>
           </div>
         </div>
 
-      
+        {/* next */}
       </div>
-
-      {/* next */}
     </div>
   );
 };
